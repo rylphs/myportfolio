@@ -9,9 +9,7 @@ app = Flask(__name__,
 
 @app.route("/<string:page>")
 def main(page="index.html"):
-    intro="""
-        I'm Raphael Ferreira Python Developer
-    """
+    intro="I am Raphael Ferreira Python Developer"
     return render_template(page, intro=intro)
 
 @app.route("/contact", methods=['POST'])
